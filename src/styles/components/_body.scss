@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    transition: $transition-fast;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+
+    svg {
+        vertical-align: middle;
+    }
+}
+
+h1 {
+    margin: 0 0 .5rem;
+}
+
+input {
+    font-size: 16px;
+    font-family: $lato;
+    font-weight: 300;
+}
+
+body {
+    background: black;
+    background-repeat: no-repeat;
+    font-family: $lato;
+    background-size: cover;
+    height: 105%;
+    margin: 0;
+}
