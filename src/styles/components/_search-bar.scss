@@ -6,3 +6,61 @@
     }
 }
 
+// dropdown menu container
+.autocomplete-list {
+    animation: fadein ease-out 0.5s;
+    min-width: 100%;
+    margin-top: 2px;
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    color: $lightGrey;
+    position: absolute;
+    z-index: 1000;
+
+    .empty {
+        padding: 8px 10px;
+    }
+}
+
+.autocomplete {
+    position: relative;
+}
+
+.autocomplete-input {
+    animation: fadein ease-in 0.5s;
+    width: 100%; // full width input search
+    background: none;
+    border: 0;
+    border-bottom: solid 1px white;
+    color: #fff;
+    padding: 10px 10px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.user-id {
+    display: none;
+}
+
+// suggestions text
+.user-data {
+    padding: 8px 10px;
+    font-size: 18px;
+    line-height: 24px;
+
+    &:hover {
+        color: $darkGrey;
+        cursor: pointer;
+        background-color: $limeGreen;
+    }
+}
+
+.autocomplete-li.selected {
+    background-color: $limeGreen;
+    color: $darkGrey;
+}

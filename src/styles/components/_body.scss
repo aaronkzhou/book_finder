@@ -40,3 +40,19 @@ body {
     height: 105%;
     margin: 0;
 }
+
+.outer-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85) 15%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 1) 90%);
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.app-container {
+    animation: fadein ease-out 1.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
