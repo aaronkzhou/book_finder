@@ -1,9 +1,6 @@
 // container
 .search-container {
     margin: 30px 0 10px;
-    div {
-        margin: 0;
-    }
 }
 
 // dropdown menu container
@@ -34,8 +31,8 @@
     width: 100%; // full width input search
     background: none;
     border: 0;
-    border-bottom: solid 1px white;
-    color: #fff;
+    border-bottom: solid 1px $lightGrey;
+    color: $lightGrey;
     padding: 10px 10px;
 
     &:focus {
@@ -43,12 +40,12 @@
     }
 }
 
-.user-id {
+.item-id {
     display: none;
 }
 
 // suggestions text
-.user-data {
+.item-data {
     padding: 8px 10px;
     font-size: 18px;
     line-height: 24px;

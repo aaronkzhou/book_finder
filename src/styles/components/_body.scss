@@ -16,10 +16,6 @@ a {
     &:focus {
         text-decoration: underline;
     }
-
-    svg {
-        vertical-align: middle;
-    }
 }
 
 h1 {
@@ -55,4 +51,20 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+.logo {
+    width: 100%;
+    max-width: 60px;
+    margin: 0 auto 25px;
+    display: block;
+
+    @include breakpoint($phone-medium) {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    svg {
+        fill: $limeGreen;
+    }
 }
