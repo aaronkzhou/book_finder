@@ -7,10 +7,8 @@ RUN apt-get update && apt-get install -y \
 	libmcrypt-dev  \
 	libicu-dev \
 	mariadb-client \
-	git \
-	zip \
-	unzip \
 	wget \
+	libpng-dev \
 	&& pecl install mcrypt-1.0.2 \
 	&& docker-php-ext-enable mcrypt \
 	&& docker-php-ext-install pdo_mysql \
@@ -19,6 +17,7 @@ RUN apt-get update && apt-get install -y \
 	&& docker-php-ext-install intl \
 	&& docker-php-ext-install opcache \
 	&& docker-php-ext-install mbstring \
+	&& docker-php-ext-install gd \
 	&& curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
 	&& wget https://phar.phpunit.de/phpunit-6.0.phar \
 	&& chmod +x phpunit-6.0.phar \

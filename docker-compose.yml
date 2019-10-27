@@ -24,15 +24,14 @@ nginx:
 # MYSQL
 db:
   restart: always
-  image: mysql
+  image: mysql:latest
   ports:
     - '3307:3306'
   environment:
     MYSQL_ROOT_PASSWORD: 123456
-    MYSQL_USER: user
-    MYSQL_PASSWORD: password
-    MYSQL_DATABASE: database
+    MYSQL_USER: aaron
+    MYSQL_PASSWORD: 123456
+    MYSQL_DATABASE: book
   volumes:
     - ./mysql/databases:/var/lib/mysql
     - ./log/mysql:/var/log/mysql
-#  - /var/run/mysqld/mysqld.sock:/var/run/mysqld/mysqld.sock
