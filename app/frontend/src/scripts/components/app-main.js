@@ -58,7 +58,7 @@ function App() {
           </span>
           <span>
             <a
-              href="https://github.com/aaronleslie/Movie_searcher"
+              href="https://github.com/aaronkzhou/book_finder"
               title="View Github Repo"
             >
               View Code
