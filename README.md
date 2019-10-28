@@ -1,17 +1,6 @@
-# docker-compose-php
-
-docker-compose setup to run php7 with php-fpm via nginx and mysql. Connecting from php code to mysql database still fails. Seems because of mysql version, still working.
-
-# Run
-
-    $ git clone git@github.com:aaronkzhou/docker-compose-php.git
-    $ cd docker-compose-php
-    $ docker-compose build
-    $ docker-compose up -d
-
 # frontend
 
-already worked perfectly, using a external api currently(https://api.themoviedb.org), still need time to integrate with backend.
+already working perfectly, using a external api currently(https://api.themoviedb.org), still need time to integrate with backend.
 
     	$ cd app/frontend
     	$ yarn install
@@ -21,6 +10,17 @@ already worked perfectly, using a external api currently(https://api.themoviedb.
 
 use lumen framework.
 Api already work, need time on providing right data.
+
+# docker-compose-php
+
+docker-compose setup to run php7 with php-fpm via nginx and mysql. Connecting from php code to mysql database still fails. Seems because of mysql version, still working.
+
+# Run
+
+    $ git clone git@github.com:aaronkzhou/book_finder.git
+    $ cd book_finder
+    $ docker-compose build
+    $ docker-compose up -d
 
 # prerequisite
 
