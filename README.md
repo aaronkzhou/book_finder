@@ -1,17 +1,24 @@
 # docker-compose-php
 
-docker-compose setup to run php5.6 or php7 with php-fpm via nginx and mysql. Connecting from php on a mysql database still fails. Not sure why.
+docker-compose setup to run php7 with php-fpm via nginx and mysql. Connecting from php on a mysql database still fails. Seems because of mysql version, still working.
 
-# Purpose
+# frontend
 
-Create the ultimate development environment
+already worked perfectly, using a external api currently(https://api.themoviedb.org), still need time to integrate with backend.
 
-# Install
+    	$ cd app/frontend
+    	$ yarn install
+    	$ yarn start
 
-1. Install docker and [docker-compose](https://docs.docker.com/compose/install/)
-   rename the docker-compose file for your requirement
+
+# backend
+use lumen framework.
+Api already work, need time on providing right data.
+
 
 # prerequisite
+1. Install docker and [docker-compose](https://docs.docker.com/compose/install/)
+   rename the docker-compose file for your requirement
 
 rename the docker-compose file for your need
 
