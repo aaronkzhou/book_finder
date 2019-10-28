@@ -19,8 +19,6 @@ $router->get('foo', function () {
     return 'Hello World';
 });
 
-$router->get('book/{name}', function ($name) {
-    $results = app('db')->select("SHOW DATABASES");
-    echo(env('DB_HOST'));
-    return 'book:'.$name;
+$router->group(['prefix' => 'api'], function () use ($router) {
+    $router->get('book/{name}', 'BookController@findByName');
 });
